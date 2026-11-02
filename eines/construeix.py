@@ -26,7 +26,7 @@ SORTIDA = ARREL / "docs"
 # Si es publica en una altra adreça (per exemple usuari.github.io/tecnocat/), cal canviar-la aquí.
 # Si no és una adreça de github.io, l'script també crea el fitxer CNAME del domini propi: mentre
 # les DNS del domini no apuntin a GitHub, cal posar aquí l'adreça de github.io.
-URL_WEB = "https://webtecnocat.github.io/"
+URL_WEB = "https://tecnocat.eu/"
 DESCRIPCIO_WEB = ("Apunts i recursos de Josep M Sardà sobre Linkat, App Inventor, programari lliure, "
                   "tecnologia i intel·ligència artificial.")
 TEMA = ARREL / "eines" / "assets" / "tema"  # logo, icona i decoracions del tema WordPress original

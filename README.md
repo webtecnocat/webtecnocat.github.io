@@ -2,7 +2,7 @@
 
 Projecte per passar l'antiga web WordPress de tecnocat.eu, i les seves subwebs, a una web estàtica publicada a GitHub Pages.
 
-Estat a 2 de novembre de 2026: la web està acabada i comprovada, a la carpeta `docs/`. Es publica al repositori `webtecnocat/webtecnocat.github.io`, a l'adreça https://webtecnocat.github.io/.
+Estat a 2 de novembre de 2026: la web està acabada, a la carpeta `docs/`. Es publica al repositori `webtecnocat/webtecnocat.github.io`, amb el domini https://tecnocat.eu/ (les DNS d'IONOS ja apunten a GitHub). Els passos que falten són a `instruccions.md`.
 
 ## Què hi ha a cada carpeta
 

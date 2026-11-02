@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instruccions i comandes · Tecnocat</title>
+<link rel="icon" href="imatges/tema/icona.ico">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/estil.css">
+<meta name="description" content="Instruccions i comandes per Linux Per els que voleu veure els interiors de linux, aquí teniu una sèrie de comandes i utilitats que podeu fer des d’un…">
+<meta property="og:site_name" content="Tecnocat">
+<meta property="og:title" content="Instruccions i comandes · Tecnocat">
+<meta property="og:description" content="Instruccions i comandes per Linux Per els que voleu veure els interiors de linux, aquí teniu una sèrie de comandes i utilitats que podeu fer des d’un…">
+<meta property="og:url" content="https://webtecnocat.github.io/instruccions-i-comandes.html">
+<meta property="og:image" content="https://webtecnocat.github.io/imatges/tema/logo.png">
+<meta property="og:locale" content="ca_ES">
+</head>
+<body>
+<header class="cap">
+  <div class="logo"><a href="index.html"><img src="imatges/tema/logo.png" alt="Tecnocat" width="391" height="49"></a>
+    <p class="lema">Una mica de tot</p></div>
+  <nav class="menu-principal" aria-label="Menú principal">
+    <button class="obre-menu" aria-expanded="false">☰ Menú</button>
+    <ul class="menu"><li><a href="index.html">Inici</a></li><li class="te-fills"><a href="la-linkat.html">Linkat</a><ul class="submenu"><li><a href="linux.html">Linux</a></li><li><a href="linkat/index.html">Introducció a la Linkat</a></li><li><a href="de-linux-mint-a-linkat.html">De linux Mint a Linkat</a></li><li class="actiu"><a href="instruccions-i-comandes.html">Instruccions i comandes</a></li><li><a href="installacio-de-fonts.html">Instal·lació de fonts</a></li><li><a href="utilitats.html">Utilitats</a></li><li class="te-fills"><a href="educat1x1.html">Educat1x1</a><ul class="submenu"><li><a href="els-inicis-deducat-1x1.html">Els inicis</a></li><li><a href="toshiba-nb200.html">Toshiba NB200</a></li><li><a href="toshiba-nb250.html">Toshiba NB250</a></li></ul></li></ul></li><li class="te-fills"><a href="app-inventor.html">App Inventor</a><ul class="submenu"><li><a href="presentacio-app-inventor.html">Presentació App Inventor</a></li><li><a href="x01-activitats-appinv2.html">x01 Activitats AppInv2</a></li><li><a href="app-inventor-virtualitzar-mit-companion.html">App Inventor virtualitzar MIT Companion</a></li></ul></li><li class="te-fills"><a href="programari.html">Programari</a><ul class="submenu"><li><a href="llibreta-de-notes.html">Llibreta de notes</a></li><li><a href="clonezilla.html">Clonezilla</a></li><li><a href="libreoffice.html">Libreoffice</a></li><li><a href="programari-lliure.html">Programari lliure</a></li></ul></li><li class="te-fills"><a href="tecnologia.html">Tecnologia</a><ul class="submenu"><li class="te-fills"><a href="tecnologia-industrial.html">Tecnologia Industrial</a><ul class="submenu"><li><a href="arquitectura-bioclimatica.html">Arquitectura bioclimàtica</a></li><li><a href="energia-electrica.html">Energia elèctrica</a></li></ul></li><li><a href="robotica.html">Robòtica</a></li><li class="te-fills"><a href="les-bateries.html">Les bateries</a><ul class="submenu"><li><a href="bateries-de-liti-io.html">Bateries de Liti-Ió: consells</a></li></ul></li></ul></li><li><a href="ia/index.html">Recursos IA</a></li><li class="menu-cerca"><form class="cerca" action="cerca.html" role="search"><input type="search" name="q" placeholder="Cerca…" aria-label="Cerca a la web"><button type="submit" aria-label="Cerca">⌕</button></form></li></ul>
+  </nav>
+</header>
+<div class="contenidor"><main class="principal"><article class="entrada pagina"><header class="info"><h1 class="titol-entrada">Instruccions i comandes</h1><div class="forma1"></div></header>
+<div class="avis antic">Aquest contingut ve de les primeres versions de Tecnocat, d'abans del 2019. Algunes instruccions, enllaços o versions de programes poden haver quedat desfasats.</div><div class="contingut"><h1 class="wp-block-heading">Instruccions i comandes per Linux</h1>
+
+
+
+<p>Per els que voleu veure els interiors de linux, aquí teniu una sèrie de comandes i utilitats que podeu fer des d’un terminal.</p>
+
+
+
+<h1 class="wp-block-heading"><a>Fitxers bàsics de Linux</a></h1>
+
+
+
+<ul class="wp-block-list"><li>/etc/crontab<ul><li>Tasques programades</li></ul></li><li>/etc/fstab<ul><li>Creació de les unitats de fitxers</li></ul></li><li>/etc/modules<ul><li>Mòduls que es carreguen en iniciar el linux.</li></ul></li><li>/etc/hosts.deny<ul><li>Pàgines a les cuals no es pot tenir accés.</li></ul></li><li>/etc/hosts.allow<ul><li>Pàgies o recursos als que es dona accés</li></ul></li><li>/etc/cups.conf<ul><li>Servidor de impressores</li></ul></li><li>/etc/rc[X].d<ul><li>Scrips que s’executen al nivell X.</li></ul></li><li>/etc/samba/smb.conf<ul><li>Configuració del Samba</li></ul></li><li>/etc/udev/udev.rules<ul><li>Regles de definició dels dispositius UDEV</li></ul></li><li>/etc/X!!/xorg.conf<ul><li>Configuració de l’entorn gràfic</li></ul></li><li>/etc/grub/menu.lst<ul><li>Configuració del menu d’arrencada del Grub.</li></ul></li><li>/etc/bash.bashrc<ul><li>Script que s’executa quan qualsevol usuari inicia una sessió.</li></ul></li><li>/etc/[USER]/.bashrc<ul><li>Script que s’executa quan l’usuari USER inicia una sessió.</li></ul></li><li>/etc/[USER]/.xinitrc<ul><li>Script que s’executa quan l’usuari USER inicia una sessió.</li></ul></li></ul>
+
+
+
+<h1 class="wp-block-heading"><a>Fitxers de registres de Linux</a></h1>
+
+
+
+<ul class="wp-block-list"><li>/var/log/cups/<ul><li>Registres del servidor de impressió.</li></ul></li><li>/var/log/fsck/<ul><li>Registres dels exàmens dels discos.</li></ul></li><li>/var/log/samba/<ul><li>Registres del servidor de samba.</li></ul></li><li>/var/log/auth.log<ul><li>Registres dels accessos al sistema.</li></ul></li><li>/var/log/dmesg<ul><li>Registres dels missatges del sistema.</li></ul></li><li>/var/log/syslog<ul><li>Registres del sistema.</li></ul></li><li>/var/log/kern.log<ul><li>Registres del kernel del sistema.</li></ul></li><li>/var/log/mail.log<ul><li>Registres dels sistemes de correu.</li></ul></li><li>/var/log/messages<ul><li>Registres dels missatges del sistema.</li></ul></li><li>/var/log/Xorg.0.log<ul><li>Registres del servidor gràfic.</li></ul></li></ul>
+
+
+
+<h1 class="wp-block-heading"><a>Comandes de registres i informació</a></h1>
+
+
+
+<ul class="wp-block-list"><li>dmesg<ul><li>Mostra els missatges del sistema.</li></ul></li><li>tail -f /var/log/[ARXIU]<ul><li>Ens ensenya en temsp real les últimes 10 línies del ARXIU.</li></ul></li><li>date<ul><li>Ens ensenya la data i hora actual</li></ul></li><li>uptime<ul><li>Ens ensenya el temps que porta funcionant el sistema.</li></ul></li><li>w<ul><li>Ens ensenya els usuaris connectats al nostre ordinador.</li></ul></li><li>whoami<ul><li>Ens ensenya el nom d’usuari que tenim.</li></ul></li><li>finger [USURI]<ul><li>Ens ensenya informació sobre l’USUARI.</li></ul></li><li>cat /proc/cpuinfo<ul><li>Ens ensenya informació sobre la CPU.</li></ul></li><li>cat /proc/meminfo<ul><li>Ens ensenya informació sobre la memòria.</li></ul></li><li>df<ul><li>Ens ensenya informació sobre la utilització dels discos.</li></ul></li><li>du [CAMI]<ul><li>Ens ensenya l’espai utilitzat per els arxius del CAMÍ.</li></ul></li><li>free<ul><li>Ens ensenya informació de la memòria i del swap.</li></ul></li></ul>
+
+
+
+<h1 class="wp-block-heading"><a>Usuaris i grups</a></h1>
+
+
+
+<ul class="wp-block-list"><li>adduser<ul><li>Genera usuaris humans.</li></ul></li><li>adduser –system<ul><li>Genera usuaris de sistema.</li></ul></li><li>addgroup<ul><li>Genera un grup.</li></ul></li><li>addgroup –system<ul><li>Genera un grup de sistema.</li></ul></li><li>adduser [USUARI] [GRUP]<ul><li>Afegeix el USUARI al GRUP.</li></ul></li><li>deluser [USUARI] [GRUP]<ul><li>Elimina el USUARI al GRUP.</li></ul></li><li>deluser [USUARI]<ul><li>Elimina el USUARI.</li></ul></li><li>delgroup [GRUP]<ul><li>Elimina el GRUP</li></ul></li></ul>
+
+
+
+<p><strong>Nota</strong>: Encara que eliminem l’usuari no s’eliminen els fitxers de /home/</p>
+
+
+
+<ul class="wp-block-list"><li>passwd [USUARI]<ul><li>podem canviar la contrasenya de l’USUARI</li></ul></li></ul>
+
+
+
+<h1 class="wp-block-heading"><a>Permisos</a></h1>
+
+
+
+<ul class="wp-block-list"><li>chmod [OCTAL] [FITXER]<ul><li>Posa els permisos que posem a OCTAL al FITXER</li><li>4: Lectura, 2: Escriptura, 1: Execució</li><li>Propietari Grup Altres</li><li>Exemple chmod 764 arxiu, assigna els permisos de lectura, escriptura i execució al propietari, només de Lectura i escriptura al grup, i els altres només la lectura.</li></ul></li><li>chmod [OCTAL] -R [RUTA]<ul><li>Fa els canvis als fitxers de la RUTA</li></ul></li></ul>
+
+
+
+<ul class="wp-block-list"><li>chown [USUARI] [FITXER]<ul><li>USUARI serà el propietari del FITXER</li></ul></li><li>chgrp [GROUP] [FITXER]<ul><li>FITXER pertany al GROUP</li></ul></li></ul>
+
+
+
+<p><strong>NOTA</strong>: per fer els canvis de manera recursiva hem de posar un -R fa els canvis</p>
+
+
+
+<h3 class="wp-block-heading"><a>Quins equips hi ha a la meva xarxa?</a></h3>
+
+
+
+<p>Podem saber els equips i els ports que tenen oberts a la nostra xarxa, pot tardar una mica si hi han molts equips.</p>
+
+
+
+<ol class="wp-block-list"><li>nmap -PE 192.168.0.0/24</li></ol>
+
+
+
+<p>Mira a la xarxa 192.168.0.xxx i els ports que tenen oberts.</p>
+
+
+
+<p>Si tant sols volem controlar els ports d’un equip determinat, per exemple el 25 i el 80, posaríem</p>
+
+
+
+<ol class="wp-block-list"><li>nmap -p 25,80 192.168.0.50</li></ol>
+
+
+
+<p>Ens pot ser útil per analitzar la nostra xarxa.</p>
+
+
+
+<h3 class="wp-block-heading"><a>Ajuntar fitxers pdf</a></h3>
+
+
+
+<p><em>gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=totsJunts.pdf primer.pdf segon.pdf tercer.pdf …</em></p>
+
+
+
+<p>on tots junts es el nou fitxer i el primer, segon … son els fitxers originals</p>
+
+
+
+<h2 class="wp-block-heading"><a>Monitor Fora de rang</a></h2>
+
+
+
+<p>1.- Prémer Ctrl * Alt + F2</p>
+
+
+
+<p>2.- Entrem com a root</p>
+
+
+
+<p>3.- Matar el GDM: #killall gdm</p>
+
+
+
+<p>4.- Carreguem l’entorn gràfic: #sax2 -l</p>
+
+
+
+<p>5.- Esperem una estona i acceptem el gràfic que ens surt ens deixa una resolució baixa.</p>
+
+
+
+<p>6.- Reiniciem l’ordinador. Ara s’hauria d’engegar de manera gràfica.</p>
+
+
+
+<p>7.- Entrem i configurem la targeta gràfica. Des de el Yast, o bé entrant a&nbsp;<em>Sistema → Maquinari → Targeta gràfica i monitor</em></p>
+
+
+
+<p><strong>Nota</strong>: Si entrem a prova de fallades podem anar directament al pas 4.</p>
+
+
+
+<h2 class="wp-block-heading"><a>Formatar unitat des del terminal</a></h2>
+
+
+
+<p>Suposem que ja hem posar la unitat de USB, que volem formatar a l’ordinador. Per altres unitats seria de manera similar.</p>
+
+
+
+<p>Primer hem d’obrir el Terminal:&nbsp;<em>Aplicacions → Sistema → Terminal → Terminal Gnome</em></p>
+
+
+
+<p>El&nbsp;<strong>primer</strong>&nbsp;que hem de trobar és la unitat que volem formatar. Per saber-ho el mirarem les unitats muntades, amb la comanda&nbsp;<strong><em>mount</em></strong>.</p>
+
+
+
+<p>A diferencia de Windows, aquí tot son carpetes, per tant, us pot sortir alguna cosa similar al següent:</p>
+
+
+
+<p><em>/dev/sda1 on /windows/C type fuseblk (rw,noexec,nosuid,nodev,allow_other,default_permissions,blksize=4096) /dev/sda2 on /windows/Dades type ext3 (rw) /dev/sdb1 on /media/KINGSTON type vfat (rw,nosuid,nodev,shortname=lower,flush,utf8,uid=1000)</em></p>
+
+
+
+<p>On&nbsp;<strong>sda</strong>&nbsp;és la primera unitat, normalment el disc dur de l’ordinador</p>
+
+
+
+<p><strong>sda1</strong>&nbsp;és la primera partició del disc dur.</p>
+
+
+
+<p><strong>sda2</strong>&nbsp;és la segona partició del disc dur. com si haguéssim dividit la unitat en dues.</p>
+
+
+
+<p><strong>sdb</strong>&nbsp;és la segona unitat, si tenim 2 disc durs serà el segon, en el nostre cas és la USB que volem formatar.</p>
+
+
+
+<p><strong>sdb1</strong>&nbsp;és la primera partició, i única de la unitat de USB.</p>
+
+
+
+<p><strong>/media/KINGSTON</strong>&nbsp;És la carpeta on podem llegir les dades de la unitat.</p>
+
+
+
+<p>En&nbsp;<strong>segon</strong>&nbsp;lloc el que hem de fer es desmontar la unitat per poder-la formatar. NO ho podem fer amb la unitat oberta. Escriurem al terminal:</p>
+
+
+
+<p><em>umount /dev/sdb1</em></p>
+
+
+
+<p>Per&nbsp;<strong>últim</strong>&nbsp;ja podem formatar la unitat. La instrucció és&nbsp;<em><strong>mkfs</strong></em>, però en el cas de la Linkat li hem de posar on es troba. Escriurem, al terminal.</p>
+
+
+
+<p><em>/sbin/mkfs.vfat /dev/sdb1</em>&nbsp;Ja que és la unitat que voliem formatar i ho fem amb FAT32.</p>
+
+
+
+<p>Si el que volem es formatar-la amb&nbsp;<strong>ext3</strong>, hauriem de posar:</p>
+
+
+
+<p><em>/sbin/mkfs.vfat /dev/sdb1</em></p>
+
+
+
+<p>Ja tindrem la unitat a punt de utilitzar.</p>
+
+
+
+<p><strong>NOTA1</strong>&nbsp;Segons els nostres drets pot ser que hagim de fer alguna acció com administrador o root del sistema, recordeu que des de terminal, passem a ser root, escrivint la instrucció&nbsp;<em>su</em>&nbsp;i seguidament ens demana la contrasenya.</p>
+
+
+
+<p><strong>NOTA2</strong>&nbsp;Si no tenim la partició feta o volem dividir la unitat en dues o més parts, ho podem fer amb la instrucció&nbsp;<em>cfdisk /dev/sdb1</em>&nbsp;.</p></div></article></main></div>
+<footer class="peu-web">
+  <p class="nom">Tecnocat.eu</p>
+  <p>Continguts de Josep M Sardà · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca">CC BY-NC-SA 4.0</a></p>
+</footer>
+<script src="assets/cerca-dades.js"></script>
+<script src="assets/tecnocat.js"></script>
+</body>
+</html>

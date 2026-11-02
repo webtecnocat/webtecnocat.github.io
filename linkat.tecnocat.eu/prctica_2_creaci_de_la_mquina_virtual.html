@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ca" xml:lang="ca" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Pràctica 2. Creació de la màquina virtual | Linkat per coordinadors </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta http-equiv="content-language" content="ca" />
+<meta name="author" content="Josep M Sardà" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript">$exe_i18n={show:"Mostra",hide:"Amaga",showFeedback:"Mostra realimentació",hideFeedback:"Amaga realimentació",correct:"Correcte",incorrect:"Incorrecte",menu:"Menú"}</script>
+<script type="text/javascript" src="common.js"></script>
+</head>
+<body class="exe-web-site"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="prctica_2_creaci_de_la_mquina_virtual.html#main" class="sr-av">Omet navegació</a></p>
+<div id="header" >Linkat per coordinadors</div>
+<div id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Linkat per coordinadors</a></li>
+   <li><a href="prctica_1_installaci_virtualbox.html" class="no-ch">Pràctica 1. Instal·lació VirtualBox</a></li>
+   <li id="active"><a href="prctica_2_creaci_de_la_mquina_virtual.html" class="active no-ch">Pràctica 2. Creació de la màquina virtual</a></li>
+   <li><a href="prctica_3_installaci_de_la_linkat.html" class="no-ch">Pràctica 3. Instal·lació de la Linkat</a></li>
+   <li><a href="prctica_4_actualitzaci_de_la_linkat.html" class="no-ch">Pràctica 4. Actualització de la Linkat</a></li>
+   <li><a href="prctica_5_installaci_unitats_de_xarxa.html" class="no-ch">Pràctica 5. Instal·lació unitats de xarxa</a></li>
+   <li><a href="prctica_6_configuraci_de_les_unitats_de_xarxa.html" class="no-ch">Pràctica 6. Configuració de les unitats de xarxa</a></li>
+   <li><a href="prctica_7_installaci_impressora_en_xarxa.html" class="no-ch">Pràctica 7. Instal·lació impressora en xarxa</a></li>
+   <li><a href="prctica_8_installaci_de_perfils.html" class="no-ch">Pràctica 8. Instal·lació de perfils</a></li>
+   <li><a href="practica_9_entrada_automtica_dun_usuari.html" class="no-ch">Practica 9. Entrada automàtica d'un usuari.</a></li>
+   <li><a href="prctica_10_aturada_automtica.html" class="no-ch">Pràctica 10. Aturada automàtica</a></li>
+   <li><a href="prctica_11_installaci_de_fonts.html" class="no-ch">Pràctica 11. Instal·lació de fonts</a></li>
+   <li><a href="prctica_12_altres_eines_per_coordinadors.html" class="no-ch">Pràctica 12. Altres eines per coordinadors</a></li>
+   <li><a href="bibliografia.html" class="no-ch">Bibliografia</a></li>
+</ul>
+</div>
+<div id='topPagination'>
+<div class="pagination noprt">
+<a href="prctica_1_installaci_virtualbox.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="prctica_3_installaci_de_la_linkat.html" class="next"> Següent<span> &raquo;</span></a>
+</div>
+</div>
+<div id="main-wrapper">
+<div id="main"><a name="main"></a>
+<div id="nodeDecoration"><h1 id="nodeTitle">Pràctica 2. Creació de la màquina virtual</h1></div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id7">
+<div class="iDevice emphasis0">
+<div id="ta7_1" class="block iDevice_content">
+<p><span style="font-size: small; font-family: verdana,geneva;">Un cop instal&middot;lat el VirtualBox, el primer pas consisteix a definir les caracter&iacute;stiques de l'ordinadors virtual on volguem instal&middot;lar el sistema operatiu.</span></p>
+<p><span style="font-size: small; font-family: verdana,geneva;">Aquesta operaci&oacute; &eacute;s similar a anar a comprar un PC a una botiga: hem de decidir quina quantitat de mem&ograve;ria RAM li posem, quin tipus de processador, quina configuraci&oacute; de la BIOS, quina targeta gr&agrave;fica i de xarxa, capacitat de les unitats de disc, unitats de CD/DVD, ports s&egrave;rie, ports USB, etc.</span></p>
+<p><span style="font-size: small; font-family: verdana,geneva;"> Cal tenir en compte que els recursos destinats a l'ordinador virtual es trauran sempre de l'ordinador anfitri&oacute;. Dit d'una altra manera, tota la mem&ograve;ria RAM que assignem a la m&agrave;quina virtual s'haur&agrave; de restar de la mem&ograve;ria disponible per a les altres aplicacions que estiguin en funcionament al nostre ordinador.</span></p>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id8">
+<div class="iDevice emphasis1" >
+<img alt="" class="iDevice_icon" src="icon_reading.gif" /><h2 class="iDeviceTitle">Creació bàsica de la màquina virtual.</h2><div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta8_90_4" class="block iDevice_content">
+<p><span style="font-size: small; font-family: verdana,geneva;">Primer farem la definició general, seguin els passos que ens dona el programa, més endavant farem unes petites modificacions.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 1. Un cop hem posat en funcionament el programa premem sobre <strong>Nueva</strong>.</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 2. Ens demana el nom de la màquina. Per exemple L<strong>inkat EDU 12.04</strong>. Aquí triarem el tipus de S.O. en aquest cas <strong>Linux</strong> i la versió <strong>Ubuntu</strong>.</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 3. La memòria que volem que tingui la màquina. El mínim és 512 KB, si podem li assignarem <strong>1024 KB</strong>, però mai més de la meitat de la màquina real, ja que hem de deixar una bona part perquè puguin funcionar totes dues bé</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 4. Triarem crear un disc dur virtual.</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 5. Agafarem el tipus per defecte un <strong>VDI</strong>.</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 6. Triarem la <strong>ubicació dinàmica</strong>. Amb això aconseguim que no ens ocupi tota la grandària que triem del disc dur, sinó que crei un fitxer i aquest va creixent a mesura que necessita més espai. Si triem mida fixa, ens generarà un fitxer de la mida del disc dur, a no ser que ens sobri molt d'espai, jo no el recomano.</span></p>
+<p style="margin-bottom: 0cm; margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 7. Mida del disc dur. D'estrada el sistema operatiu no ocuparà més enllà dels 4 GB, però es convenient pensar que hi afegirem aplicacions i documents, per tant pensem en un disc dur mínim d'uns <strong>20 GB</strong>. De totes maneres com hem dit que tingues una ubicació dinàmica, no els ocuparà ni molt menys al nostra disc dur.</span></p>
+<p style="margin-bottom: 0cm;"><span style="font-size: small; font-family: verdana,geneva;"> Ja tenim la nostra màquina disponible, però abans de començar modificarem alguns paràmetres per millorar el seu funcionament.</span></p>
+<p style="margin-bottom: 0cm;"><span style="font-size: small; font-family: verdana,geneva;">A les imatges de sota, podeu veure aquestes passes en detall.</span></p>
+</div>
+<div id="ta8_90_5" class="block iDevice_content">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper GalleryIdevice em_iDevice" id="id9">
+<div class="iDevice emphasis1" >
+<img alt="" class="iDevice_icon" src="icon_gallery.gif" /><h2 class="iDeviceTitle">Creació de la màquina</h2><div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<ul class="exeImageGallery" id="exeImageGallery9">
+<li><a title="Pas 1. Un cop hem posat en funcionament el programa premem sobre Nueva." href="VirtualBox09.PNG"><img alt="Pas 1. Un cop hem posat en funcionament el programa premem sobre Nueva." width="128" height="128" src="VirtualBox09Thumbnail.png" /><span class="tit">Pas 1. Un cop hem posat en funcionament el programa premem sobre Nueva.</span></a></li>
+<li><a title="Pas 2.  Ens demana el nom de la màquina" href="instantania01.png"><img alt="Pas 2.  Ens demana el nom de la màquina" width="128" height="128" src="instantania01Thumbnail.png" /><span class="tit">Pas 2.  Ens demana el nom de la màquina</span></a></li>
+<li><a title="Pas 3. La memòria que volem que tingui la màquina. Mínim és 512 KB." href="instantania02.png"><img alt="Pas 3. La memòria que volem que tingui la màquina. Mínim és 512 KB." width="128" height="128" src="instantania02Thumbnail.png" /><span class="tit">Pas 3. La memòria que volem que tingui la màquina. Mínim és 512 KB.</span></a></li>
+<li><a title="Pas 4. Triarem crear un disc dur virtual." href="instantania03.png"><img alt="Pas 4. Triarem crear un disc dur virtual." width="128" height="128" src="instantania03Thumbnail.png" /><span class="tit">Pas 4. Triarem crear un disc dur virtual.</span></a></li>
+<li><a title="Pas 5. Agafarem el tipus per defecte un VDI." href="instantania04.png"><img alt="Pas 5. Agafarem el tipus per defecte un VDI." width="128" height="128" src="instantania04Thumbnail.png" /><span class="tit">Pas 5. Agafarem el tipus per defecte un VDI.</span></a></li>
+<li><a title="Pas 6. Triarem la ubicació dinàmica." href="instantania05.png"><img alt="Pas 6. Triarem la ubicació dinàmica." width="128" height="128" src="instantania05Thumbnail.png" /><span class="tit">Pas 6. Triarem la ubicació dinàmica.</span></a></li>
+<li><a title="Pas 7. Mida del disc dur. 50 GB" href="instantania06.png"><img alt="Pas 7. Mida del disc dur. 50 GB" width="128" height="128" src="instantania06Thumbnail.png" /><span class="tit">Pas 7. Mida del disc dur. 50 GB</span></a></li>
+<li><a title="Ja tenim la nostra màquina disponible." href="instantania07.png"><img alt="Ja tenim la nostra màquina disponible." width="128" height="128" src="instantania07Thumbnail.png" /><span class="tit">Ja tenim la nostra màquina disponible.</span></a></li>
+</ul>
+<script type="text/javascript">$exe.imageGallery.init("exeImageGallery9");</script>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper readingIdevice em_iDevice" id="id11">
+<div class="iDevice emphasis1" >
+<img alt="" class="iDevice_icon" src="icon_reading.gif" /><h2 class="iDeviceTitle">Retoc de la màquina</h2><div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta11_93_4" class="block iDevice_content">
+<p><span style="font-size: small; font-family: verdana,geneva;">Anem a veure alguns paràmetres que si modifiquem, farà que la nostra màquina vagi millor. Per accedir-hi seleccionem la màquina i premem a sobre de paràmetres.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Seleccionem la màquina i premem a sobre de paràmetres.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 1. A la opció General no tocarem res.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 2. Al sistema triarem la pestanya Processador i activarem el PAE.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 3. A la opció Pantalla, incrementarem la memòria de vídeo fins el màxim 128 MB. Ajudarà que es vegi millor i puguem treballar bé.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 4. A la opció Emmagatzematge, triarem el lloc on tenim la imatge de linkat per instal·lar. Ho podem fer més endavant quan començem a explicar la instal·lació. Triarem el disc ID, i buscarem la imatge ISO al nostre ordinador, o bé deixarem del DVD de la màquina si ja hem gravat la ISO en un DVD.</span></p>
+<p style="margin-left: 30px;"><span style="font-size: small; font-family: verdana,geneva;">Pas 5. A la opció Xarxa, triarem que utilitzi l'<strong>adaptador pont</strong>, així tindrem connexió directa a internet. Aquí podríem obrir l'opció avançat i triar la xarxa paravirtualitzada, però no es imprescindible, no notarem masses canvis en condicions normals.</span></p>
+<p><span style="font-size: small; font-family: verdana,geneva;">Ja tenim la màquina a punt de fer la instal·lació.</span></p>
+<p><span style="font-size: small; font-family: verdana,geneva;"><span style="font-size: small; font-family: verdana,geneva;">A les imatges de sota, podeu veure aquestes passes en detall.</span></span></p>
+</div>
+<div id="ta11_93_5" class="block iDevice_content">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper GalleryIdevice em_iDevice" id="id12">
+<div class="iDevice emphasis1" >
+<img alt="" class="iDevice_icon" src="icon_gallery.gif" /><h2 class="iDeviceTitle">Galeria d'imatges</h2><div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<ul class="exeImageGallery" id="exeImageGallery12">
+<li><a title="Seleccionem la màquina i premem a sobre de paràmetres." href="instantania07.png"><img alt="Seleccionem la màquina i premem a sobre de paràmetres." width="128" height="128" src="instantania07Thumbnail.png" /><span class="tit">Seleccionem la màquina i premem a sobre de paràmetres.</span></a></li>
+<li><a title="Pas 1. A la opció General no tocarem res." href="instantania08.png"><img alt="Pas 1. A la opció General no tocarem res." width="128" height="128" src="instantania08Thumbnail.png" /><span class="tit">Pas 1. A la opció General no tocarem res.</span></a></li>
+<li><a title="Pas 2. Al sistema triarem la pestanya Processador i activarem el PAE" href="instantania09.png"><img alt="Pas 2. Al sistema triarem la pestanya Processador i activarem el PAE" width="128" height="128" src="instantania09Thumbnail.png" /><span class="tit">Pas 2. Al sistema triarem la pestanya Processador i activarem el PAE</span></a></li>
+<li><a title="Pas 3. A la opció Pantalla, incrementarem la memòria de vídeo fins el màxim 128 MB." href="instantania10.png"><img alt="Pas 3. A la opció Pantalla, incrementarem la memòria de vídeo fins el màxim 128 MB." width="128" height="128" src="instantania10Thumbnail.png" /><span class="tit">Pas 3. A la opció Pantalla, incrementarem la memòria de vídeo fins el màxim 128 MB.</span></a></li>
+<li><a title="Pas 4. A la opció Emmagatzematge, triarem la el lloc on tenim la imatge de linkat . Ho podem fer més endavant." href="instantania11.png"><img alt="Pas 4. A la opció Emmagatzematge, triarem la el lloc on tenim la imatge de linkat . Ho podem fer més endavant." width="128" height="128" src="instantania11Thumbnail.png" /><span class="tit">Pas 4. A la opció Emmagatzematge, triarem la el lloc on tenim la imatge de linkat . Ho podem fer més endavant.</span></a></li>
+<li><a title="Si encara no la hem descarregada ho podem fer més endavant." href="instantania13.png"><img alt="Si encara no la hem descarregada ho podem fer més endavant." width="128" height="128" src="instantania13Thumbnail.png" /><span class="tit">Si encara no la hem descarregada ho podem fer més endavant.</span></a></li>
+<li><a title="Pas 5. A la opció Xarxa, triarem que utilitzi l'adaptador pont" href="instantania14.png"><img alt="Pas 5. A la opció Xarxa, triarem que utilitzi l'adaptador pont" width="128" height="128" src="instantania14Thumbnail.png" /><span class="tit">Pas 5. A la opció Xarxa, triarem que utilitzi l'adaptador pont</span></a></li>
+</ul>
+<script type="text/javascript">$exe.imageGallery.init("exeImageGallery12");</script>
+</div>
+</div>
+</div>
+</div>
+<div class="iDevice_wrapper FreeTextIdevice" id="id32">
+<div class="iDevice emphasis0">
+<div id="ta32_1" class="block iDevice_content">
+<p><img src="ccJosepM88x31.png" height="31" width="250" /></p>
+</div>
+</div>
+</div>
+<div id='bottomPagination'>
+<div class="pagination noprt">
+<a href="prctica_1_installaci_virtualbox.html" class="prev"><span>&laquo; </span>Anterior</a> | <a href="prctica_3_installaci_de_la_linkat.html" class="next"> Següent<span> &raquo;</span></a>
+</div>
+</div>
+<p align="center">Llicenciat sota la  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Llicència Creative Commons Reconeixement NoComercial CompartirIgual 4.0</a></p><div id="siteFooter">Tecnocat.eu</div></div>
+</div>
+</div>
+</body></html>

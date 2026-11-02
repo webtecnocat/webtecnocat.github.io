@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clonezilla · Tecnocat</title>
+<link rel="icon" href="imatges/tema/icona.ico">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/estil.css">
+<meta name="description" content="Clonezilla, és un conjunt d’aplicacions que ens permet clonar, fer una còpia exacta d’un ordinador. És lliure i reconeix molts formats fat, fat32, ext2,…">
+<meta property="og:site_name" content="Tecnocat">
+<meta property="og:title" content="Clonezilla · Tecnocat">
+<meta property="og:description" content="Clonezilla, és un conjunt d’aplicacions que ens permet clonar, fer una còpia exacta d’un ordinador. És lliure i reconeix molts formats fat, fat32, ext2,…">
+<meta property="og:url" content="https://webtecnocat.github.io/clonezilla.html">
+<meta property="og:image" content="https://webtecnocat.github.io/imatges/clonezilla-8.png">
+<meta property="og:locale" content="ca_ES">
+</head>
+<body>
+<header class="cap">
+  <div class="logo"><a href="index.html"><img src="imatges/tema/logo.png" alt="Tecnocat" width="391" height="49"></a>
+    <p class="lema">Una mica de tot</p></div>
+  <nav class="menu-principal" aria-label="Menú principal">
+    <button class="obre-menu" aria-expanded="false">☰ Menú</button>
+    <ul class="menu"><li><a href="index.html">Inici</a></li><li class="te-fills"><a href="la-linkat.html">Linkat</a><ul class="submenu"><li><a href="linux.html">Linux</a></li><li><a href="linkat/index.html">Introducció a la Linkat</a></li><li><a href="de-linux-mint-a-linkat.html">De linux Mint a Linkat</a></li><li><a href="instruccions-i-comandes.html">Instruccions i comandes</a></li><li><a href="installacio-de-fonts.html">Instal·lació de fonts</a></li><li><a href="utilitats.html">Utilitats</a></li><li class="te-fills"><a href="educat1x1.html">Educat1x1</a><ul class="submenu"><li><a href="els-inicis-deducat-1x1.html">Els inicis</a></li><li><a href="toshiba-nb200.html">Toshiba NB200</a></li><li><a href="toshiba-nb250.html">Toshiba NB250</a></li></ul></li></ul></li><li class="te-fills"><a href="app-inventor.html">App Inventor</a><ul class="submenu"><li><a href="presentacio-app-inventor.html">Presentació App Inventor</a></li><li><a href="x01-activitats-appinv2.html">x01 Activitats AppInv2</a></li><li><a href="app-inventor-virtualitzar-mit-companion.html">App Inventor virtualitzar MIT Companion</a></li></ul></li><li class="te-fills"><a href="programari.html">Programari</a><ul class="submenu"><li><a href="llibreta-de-notes.html">Llibreta de notes</a></li><li class="actiu"><a href="clonezilla.html">Clonezilla</a></li><li><a href="libreoffice.html">Libreoffice</a></li><li><a href="programari-lliure.html">Programari lliure</a></li></ul></li><li class="te-fills"><a href="tecnologia.html">Tecnologia</a><ul class="submenu"><li class="te-fills"><a href="tecnologia-industrial.html">Tecnologia Industrial</a><ul class="submenu"><li><a href="arquitectura-bioclimatica.html">Arquitectura bioclimàtica</a></li><li><a href="energia-electrica.html">Energia elèctrica</a></li></ul></li><li><a href="robotica.html">Robòtica</a></li><li class="te-fills"><a href="les-bateries.html">Les bateries</a><ul class="submenu"><li><a href="bateries-de-liti-io.html">Bateries de Liti-Ió: consells</a></li></ul></li></ul></li><li><a href="ia/index.html">Recursos IA</a></li><li class="menu-cerca"><form class="cerca" action="cerca.html" role="search"><input type="search" name="q" placeholder="Cerca…" aria-label="Cerca a la web"><button type="submit" aria-label="Cerca">⌕</button></form></li></ul>
+  </nav>
+</header>
+<div class="contenidor"><main class="principal"><article class="entrada"><figure class="destacada"><img src="imatges/clonezilla-8.png" alt=""></figure>
+<header class="info"><a class="cat" href="categoria-coordinacio.html">Coordinació</a><h1 class="titol-entrada">Clonezilla</h1>
+<span class="meta">josepm · <time datetime="2019-09-21">21 de setembre de 2019</time></span><div class="forma1"></div></header>
+<div class="avis antic">Aquest contingut ve de les primeres versions de Tecnocat, d'abans del 2019. Algunes instruccions, enllaços o versions de programes poden haver quedat desfasats.</div><div class="contingut"><p>Clonezilla, és un conjunt d’aplicacions que ens permet clonar, fer una còpia exacta d’un ordinador. És lliure i reconeix molts formats fat, fat32, ext2, ext3, …</p>
+
+
+
+<p>Tot i tenir un entorn no massa agradable, fa perfectament la seva funció de manera adequada, i eficient.</p>
+
+
+
+<p>Les còpies les podem guardar a un disc connectat via USB, a la xarxa, …</p>
+
+
+
+<p>És una distribució live, que podem executar des de un CD o bé des de una USB. També ens permet arrancar un ordinador des de la xarxa.</p>
+
+
+
+<h2 class="wp-block-heading"><a>Instalar-lo en una USB</a></h2>
+
+
+
+<p>Per executar-lo des de una USB, hem de fer que aquesta arrengui el sistema operatiu, anem a veure les passes que hem de seguir. Suposem que tenim una memòria USB, d’uns 200&nbsp;MB, formatada amb FAT32.</p>
+
+
+
+<p>Primer descarregarem la última versió estable de Clonezilla de la seva pàgina web.&nbsp;<a href="https://clonezilla.org/downloads.php" target="_blank" rel="noopener">descarrega clonezilla</a>. Recordem que hem de baixar la versió comprimida Zip.</p>
+
+
+
+<p>Desempaquetem el clonezilla i el copiem a dins de la memòria USB. Ho podem fer amb el Nautilus mateix.</p>
+
+
+
+<p>Per seguir hem de saber quina unitat li ha assignat el linux a aquesta memòria. Recordem que per veure les unitats muntades ho hem de fer des de un terminat, amb la instrucció&nbsp;<em>mount</em>. (A la Linkat&nbsp;<strong>Aplicacions → Sistema → Terminal→ Terminal</strong>).</p>
+
+
+
+<p>En el meu cas obtinc una línia com la següent:&nbsp;<strong>/dev/sdb1 on /media/disk-2 type vfat (rw,nosuid,nodev,shortname=lower,flush,utf8,uid=1000)</strong></p>
+
+
+
+<p>Ara des de el mateix terminal anem a la carpeta&nbsp;<em>linux</em>&nbsp;dins de&nbsp;<em>utils</em>&nbsp;on trobarem el que ens cal per convertir la clau amb autoarrencable.</p>
+
+
+
+<p>Podem escriure al terminal:&nbsp;<strong>cd /media/disk-2/utils/linux/</strong></p>
+
+
+
+<p>Recordeu que si premeu tabulador us completa les carpetes que ell reconeix. També que el /media/disk-2 és la carpeta per accedir als arxius de la USB, que hem trobat anteriorment, i per tant pot varia d’un ordinador a un altra.</p>
+
+
+
+<p>Ara al terminal tindrem alguna cosa similar a:&nbsp;<strong><a href="mailto:usuari@ordinador">usuari@ordinador</a>:/media/disk-2/utils/linux&gt;</strong></p>
+
+
+
+<p>Aquí podem observar que hi ha un fitxer anomenat:&nbsp;<strong>makeboot.sh</strong>, amb&nbsp;<strong>ls</strong></p>
+
+
+
+<p>Ara tant sols ens queda executar-lo, per tant escriure:&nbsp;<strong>bash makeboot.sh /dev/sdb1</strong></p>
+
+
+
+<p>Recordem que el /dev/sdb1, l’hem trobat abans que hem mirar on havia montat la clau i això pot variar d’un ordinador a un altra.</p>
+
+
+
+<p>I ja tenim la USB, preparada per iniciar-se, i executar el clonezilla.<br></p></div></article><nav class="nav-entrades"><a class="ant" href="libreoffice.html"><small>Entrada anterior</small>Libreoffice</a><a class="seg" href="presentacio-app-inventor.html"><small>Entrada següent</small>Presentació App Inventor</a></nav></main></div>
+<footer class="peu-web">
+  <p class="nom">Tecnocat.eu</p>
+  <p>Continguts de Josep M Sardà · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca">CC BY-NC-SA 4.0</a></p>
+</footer>
+<script src="assets/cerca-dades.js"></script>
+<script src="assets/tecnocat.js"></script>
+</body>
+</html>

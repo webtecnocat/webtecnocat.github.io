@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utilitats · Tecnocat</title>
+<link rel="icon" href="imatges/tema/icona.ico">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/estil.css">
+<meta name="description" content="Aturada programada Ens permet programar quna volem que s’aturi un ordinador http://gshutdown.tuxfamily.org Una altra manera de programar l’aturada és amb…">
+<meta property="og:site_name" content="Tecnocat">
+<meta property="og:title" content="Utilitats · Tecnocat">
+<meta property="og:description" content="Aturada programada Ens permet programar quna volem que s’aturi un ordinador http://gshutdown.tuxfamily.org Una altra manera de programar l’aturada és amb…">
+<meta property="og:url" content="https://webtecnocat.github.io/utilitats.html">
+<meta property="og:image" content="https://webtecnocat.github.io/imatges/recuperades/openhfs.png">
+<meta property="og:locale" content="ca_ES">
+</head>
+<body>
+<header class="cap">
+  <div class="logo"><a href="index.html"><img src="imatges/tema/logo.png" alt="Tecnocat" width="391" height="49"></a>
+    <p class="lema">Una mica de tot</p></div>
+  <nav class="menu-principal" aria-label="Menú principal">
+    <button class="obre-menu" aria-expanded="false">☰ Menú</button>
+    <ul class="menu"><li><a href="index.html">Inici</a></li><li class="te-fills"><a href="la-linkat.html">Linkat</a><ul class="submenu"><li><a href="linux.html">Linux</a></li><li><a href="linkat/index.html">Introducció a la Linkat</a></li><li><a href="de-linux-mint-a-linkat.html">De linux Mint a Linkat</a></li><li><a href="instruccions-i-comandes.html">Instruccions i comandes</a></li><li><a href="installacio-de-fonts.html">Instal·lació de fonts</a></li><li class="actiu"><a href="utilitats.html">Utilitats</a></li><li class="te-fills"><a href="educat1x1.html">Educat1x1</a><ul class="submenu"><li><a href="els-inicis-deducat-1x1.html">Els inicis</a></li><li><a href="toshiba-nb200.html">Toshiba NB200</a></li><li><a href="toshiba-nb250.html">Toshiba NB250</a></li></ul></li></ul></li><li class="te-fills"><a href="app-inventor.html">App Inventor</a><ul class="submenu"><li><a href="presentacio-app-inventor.html">Presentació App Inventor</a></li><li><a href="x01-activitats-appinv2.html">x01 Activitats AppInv2</a></li><li><a href="app-inventor-virtualitzar-mit-companion.html">App Inventor virtualitzar MIT Companion</a></li></ul></li><li class="te-fills"><a href="programari.html">Programari</a><ul class="submenu"><li><a href="llibreta-de-notes.html">Llibreta de notes</a></li><li><a href="clonezilla.html">Clonezilla</a></li><li><a href="libreoffice.html">Libreoffice</a></li><li><a href="programari-lliure.html">Programari lliure</a></li></ul></li><li class="te-fills"><a href="tecnologia.html">Tecnologia</a><ul class="submenu"><li class="te-fills"><a href="tecnologia-industrial.html">Tecnologia Industrial</a><ul class="submenu"><li><a href="arquitectura-bioclimatica.html">Arquitectura bioclimàtica</a></li><li><a href="energia-electrica.html">Energia elèctrica</a></li></ul></li><li><a href="robotica.html">Robòtica</a></li><li class="te-fills"><a href="les-bateries.html">Les bateries</a><ul class="submenu"><li><a href="bateries-de-liti-io.html">Bateries de Liti-Ió: consells</a></li></ul></li></ul></li><li><a href="ia/index.html">Recursos IA</a></li><li class="menu-cerca"><form class="cerca" action="cerca.html" role="search"><input type="search" name="q" placeholder="Cerca…" aria-label="Cerca a la web"><button type="submit" aria-label="Cerca">⌕</button></form></li></ul>
+  </nav>
+</header>
+<div class="contenidor"><main class="principal"><article class="entrada pagina"><header class="info"><h1 class="titol-entrada">Utilitats</h1><div class="forma1"></div></header>
+<div class="avis antic">Aquest contingut ve de les primeres versions de Tecnocat, d'abans del 2019. Algunes instruccions, enllaços o versions de programes poden haver quedat desfasats.</div><div class="contingut"><h1 class="wp-block-heading"><a>Aturada programada</a></h1>
+
+
+
+<p>Ens permet programar quna volem que s’aturi un ordinador</p>
+
+
+
+<figure class="wp-block-embed"><div class="wp-block-embed__wrapper">
+http://gshutdown.tuxfamily.org
+</div></figure>
+
+
+
+<p>Una&nbsp;<strong>altra manera de programar l’aturada</strong>&nbsp;és amb el cron. Per exemple: volem que els ordinadors s’aturin a les 22:45. Llavors tenim la següent línia:</p>
+
+
+
+<p>45 22 * * * /sbin/shutdown -h now</p>
+
+
+
+<p>que vol dir: minut hora dia-del-mes mes dia-de-la-setmana comanda</p>
+
+
+
+<p>asterisc significa qualsevol valor. La comanda és shutdown que es troba en el directori /sbin, i l’opció -h vol dir halt (atura) i l’opció now vol dir “en aquest mateix moment”.</p>
+
+
+
+<h1 class="wp-block-heading"><a>HFS Intercanvi de fitxers en una xarxa local</a></h1>
+
+
+
+<p>HFS és una aplicació que ens crea un servidor de fitxers al nostre ordinador de manera molt senzilla. Tot i ser una aplicació de windows la podem executar i és plenament operativa en linux mitjançant el wine.</p>
+
+
+
+<p>Perquè ens pot servir? per repartir als nostres alumnes qualsevol document, duna manera senzilla, i sense necessitat de connexió a internet, però si a la xarxa local.</p>
+
+
+
+<p>Anem a veure com funciona. Primer el descarregarem de la web del seu autor:&nbsp;<a href="http://www.rejetto.com/hfs/" target="_blank" rel="noopener">http://www.rejetto.com/hfs/</a></p>
+
+
+
+<p>Tot seguit el posem en funcionament, prement el botó dret a sobre i triant la opció “<strong>Obre amb wine</strong>”.</p>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/openhfs.png" alt="Menú contextual del fitxer hfs.exe amb l&#x27;opció Obre amb wine" loading="lazy"></figure>
+
+
+
+<table class="wp-block-table"><tbody><tr><td>S’obre una finestra on ens hem de fixar amb algunes dades, hi ha una adreça web del tipus&nbsp;http://127.12.34.56:8080, d’aquesta adreça és important el 8080, que és el port.</td></tr><tr><td>A sota tenim la finestra partida en dues parts a l’esquerra hi podem afegir els fitxer que volem compartir amb els alumnes, tant sols premen el botó dret a sobre i cercant-lo al nostre ordinador.</td></tr><tr><td>Per acabar ens cal saber la Ip del nostre ordinador, que és un nombre únic per la nostra màquina, és&nbsp;<em>important que sigui visible per els alumnes</em>, per trobar-la hem d’obrir un terminal (Botó dret a sobre l’escriptori) i escriure la instrucció&nbsp;<strong>/sbin/ifconfig</strong>. Aquí ens surt molt de text, hem de buscar els números que hi ha al costat de&nbsp;<strong>inet addr</strong>. Hem de tenir en compte si ens connectem amb cable o amb wi-fi, si és amb cable utilitzarem l’adreça que hi ha a continuació del eth0, i si estem connectats amb wi-fi, utilitzarem l’adreça que hi ha a continuació de wlan0.D’aquesta finestra hem de cercar una numeració que sol ser 192.168.x.x</td></tr><tr><td>Als nostres alumnes haurem de donar l’adreça que trobem seguida del port. Per exemple ens ha sortit una IP inet addr 192.168.1.30, i abans hem vist que ens ha sortit el port 8080, per tant els alumnes han d’escriure al seu navegador 192.168.1.30:8080Tindran accés al fitxer que nosaltres hem compartit amb ells i el podran descarregar sense problema.</td></tr></tbody></table>
+
+
+
+<p>Gràcies a Valentí Ferrer, per donar-me a conèixer aquesta eina.</p>
+
+
+
+<h1 class="wp-block-heading"><a>Clonezilla</a></h1>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/Clonezilla_menu.png" alt="Menú d&#x27;arrencada de Clonezilla Live" loading="lazy"></figure>
+
+
+
+<p>Clonezilla, és un conjunt d’aplicacions que ens permet clonar, fer una còpia exacta d’un ordinador. És lliure i reconeix molts formats fat, fat32, ext2, ext3, …</p>
+
+
+
+<p>Tot i tenir un entorn no massa agradable, fa perfectament la seva funció de manera adequada, i eficient.</p>
+
+
+
+<p>Les còpies les podem guardar a un disc connectat via USB, a la xarxa, …</p>
+
+
+
+<p>És una distribució live, que podem executar des de un CD o bé des de una USB. També ens permet arrancar un ordinador des de la xarxa.</p>
+
+
+
+<h2 class="wp-block-heading">Instalar-lo en una USB</h2>
+
+
+
+<p>Per executar-lo des de una USB, hem de fer que aquesta arrengui el sistema operatiu, anem a veure les passes que hem de seguir. Suposem que tenim una memòria USB, d’uns 200 MB, formatada amb FAT32.</p>
+
+
+
+<p>Primer descarregarem la última versió estable de Clonezilla de la seva pàgina web.&nbsp;<a href="http://clonezilla.org/downloads.php" target="_blank" rel="noopener">Descarrega clonezilla</a>. Recordem que hem de baixar la versió comprimida Zip.</p>
+
+
+
+<p>Desempaquetem el clonezilla i el copiem a dins de la memòria USB. Ho podem fer amb el Nautilus mateix.</p>
+
+
+
+<p>Per seguir hem de saber quina unitat li ha assignat el linux a aquesta memòria. Recordem que per veure les unitats muntades ho hem de fer des de un terminat, amb la instrucció&nbsp;<em>mount</em>. (A la Linkat&nbsp;<strong>Aplicacions → Sistema → Terminal→ Terminal</strong>).</p>
+
+
+
+<p>En el meu cas obtinc una línia com la següent:&nbsp;<strong>/dev/sdb1 on /media/disk-2 type vfat (rw,nosuid,nodev,shortname=lower,flush,utf8,uid=1000)</strong></p>
+
+
+
+<p>Ara des de el mateix terminal anem a la carpeta&nbsp;<em>linux</em>&nbsp;dins de&nbsp;<em>utils</em>&nbsp;on trobarem el que ens cal per convertir la clau amb autoarrencable.</p>
+
+
+
+<p>Podem escriure al terminal:&nbsp;<strong>cd /media/disk-2/utils/linux/</strong></p>
+
+
+
+<p>Recordeu que si premeu tabulador us completa les carpetes que ell reconeix. També que el /media/disk-2 és la carpeta per accedir als arxius de la USB, que hem trobat anteriorment, i per tant pot varia d’un ordinador a un altra.</p>
+
+
+
+<p>Ara al terminal tindrem alguna cosa similar a:&nbsp;<strong><a href="mailto:usuari@ordinador">usuari@ordinador</a>:/media/disk-2/utils/linux&gt;</strong></p>
+
+
+
+<p>Aquí podem observar que hi ha un fitxer anomenat:&nbsp;<strong>makeboot.sh</strong>, amb&nbsp;<strong>ls</strong></p>
+
+
+
+<p>Ara tant sols ens queda executar-lo, per tant escriure:&nbsp;<strong>bash makeboot.sh /dev/sdb1</strong></p>
+
+
+
+<p>Recordem que el /dev/sdb1, l’hem trobat abans que hem mirar on havia montat la clau i això pot variar d’un ordinador a un altra.</p>
+
+
+
+<p>I ja tenim la USB, preparada per iniciar-se, i executar el clonezilla.</p>
+
+
+
+<h1 class="wp-block-heading"><a>Gnome Schedule</a></h1>
+
+
+
+<p>Algun cop hem de fer que s’executin sempre en un moment determinat, còpies de seguretat, …Normalment això es fa editant el fitxer&nbsp;<strong>crontab</strong>, amb la instrucció&nbsp;<strong>crontab -e</strong>. Fan servir una terminologia pròpia que podem trobar per exemple a la wikipedia.&nbsp;<a href="http://es.wikipedia.org/wiki/Cron_%28Unix%29" target="_blank" rel="noopener">Cron</a>.Hem de tenir en compte però, el cron,&nbsp;<strong>no executa de manera directe programes gràfics</strong>, per exemple firefox, vlc, gedit, … sinó que que es molt adequat per comandes unix.<br>Si hem d’executar programes gràfics he trobat aquesta aplicació que ens ho facilita, això no treu que també la poguem utilitzar per fer les comandes habituals que faríem amb el cron.</p>
+
+
+
+<h2 class="wp-block-heading">Instal·lació</h2>
+
+
+
+<p>En el cas d’ubuntu el trobeu al repositori.El podem descarregar des de la seva pàgina web i compilat seguin les instruccions del fitxer install.&nbsp;<a href="http://gnome-schedule.sourceforge.net/" target="_blank" rel="noopener">Gnome-Schedule</a>.<br></p>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/schedule2.jpg" alt="Cerca del paquet gnome-schedule a la web d&#x27;openSUSE" loading="lazy"></figure>
+
+
+
+<p>Una opció més senzilla és anar al nostre repositori de la distribució i fer la instal·lació, si tenim la Linkat o Opensuse, és el mateix, anirem a la pàgina de descàrregues de paquets i la buscarem, tenin en compte que hem d’activar que busqui al les pàgines personals (Search options – Include users’ home projects). Triem la nostra versió i el nom del programa. Premem a la instal·lació i posem la contrasenya de root.<br><a href="http://software.opensuse.org/114/en" target="_blank" rel="noopener">Paquets de OpenSuse</a><br></p>
+
+
+
+<h2 class="wp-block-heading">Posada en funcionament</h2>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/schedule3.jpg" alt="Finestra del Planificador del Gnome per configurar les tasques planificades" loading="lazy"></figure>
+
+
+
+<p>El podem trobar a&nbsp;<strong>Sistema -&gt; Monitos -&gt; Sheduled task</strong>, o be a un terminal escrivim&nbsp;<strong>gnome-schedule</strong>, i es posarà en funcionament el programa.<br>A partir d’aquí només hem de tenir clar que volem fer.</p>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/schedule3.jpg" alt="Finestra del Planificador del Gnome per configurar les tasques planificades" loading="lazy"></figure>
+
+
+
+<p>Quan premem sobre NOU, s’obre una nova finestra i ens dona a triar tres opcions, que per ordre són:<br><br>– Una tasca què és repeteixi periòdicament.<br>– Una tasca què és faci tant sols un cop.<br>– Una tasca predefinida en una plantilla.</p>
+
+
+
+<p>Cada opció ens portarà a una altra finestra amb les opcions corresponents.<br>&nbsp;</p>
+
+
+
+<table class="wp-block-table"><tbody><tr><td>Tasca periòdicaAquí li podem omplir les diferents opcions:Posar un nom descriptiu de la feinaPosar la comanda que volem executar. Per exemple si volem posar en funiconament el Firefox, podem escriure senzillament firefox, o bé posar tota la ruta del programa normalment&nbsp;<strong>/usr/bin/firefox</strong>.Tot seguit triem el tipus d’aplicació, que s’executi:per defecte en un terminal (Default behaviour).per defecte esn un terminal però sense sortida (suppres output).Una aplicació gràfica (X aplication)Una aplicació gràfica sense sortida (X aplication suppres output).A sota podem triar cada cuan s’ha d’executar, cada hora, minut dia, … o bé amb avançat a un moment determinat.Per últim triem si el colem afegir a una plantilla o acceptem i la posem programada.</td></tr><tr><td>Tasca d’un sol copEn aquest cas és similar a l’anterior, però nomes podem fixar un moment per executar-se.Com abans hem d’omplir:Un nom descriptiu de la tasca.Hem de marcar si és una aplicació gràfica, sinó no cal marcar res.El moment que volem que s’executi la tasca.La tasca que volem fer.Les plantilles és per si volem guardar una instrucció complicada que hàgim de fer esporàdicament.<br>Realment molt senzill, i molt útil per programes gràfics.&nbsp;</td></tr><tr><td>&nbsp;</td></tr></tbody></table>
+
+
+
+<h1 class="wp-block-heading"><a>Aplicacions gràfiques amb crontab</a></h1>
+
+
+
+<p>Es molt més rebuscar que el programa anterior, perì si ho voleu provar…</p>
+
+
+
+<p>No se si mai heu intentat executar un programa gràfic amb el cron a linux, suposo que us heu trobat amb el problema que no es pot directament.</p>
+
+
+
+<p>Fins ara havia trobat una solució, amb un programa anomenat&nbsp;<strong>Gnome Schedule</strong>, però li fa falta el PyGTK &gt;= 2.3 i el Python, entre d’altres, no sempre disponibles.</p>
+
+
+
+<p>Cercant per internet, semblava que havia de ser una cosa senzilla, tant sols haviem de crear una línia similar a:</p>
+
+
+
+<p><strong>export DISPLAY=:0.0 instrucció</strong></p>
+
+
+
+<p>Però la cosa no funcionava, i per tant no era una solució viable.</p>
+
+
+
+<p>Be després d’una recerca, més intensiva, vaig trobar que feia falta una instrucció una mica més complicada, on entre d’altres hi havia:</p>
+
+
+
+<p><strong>XAUTHORITY=/var/run/gdm/auth-for-josepm-Z5TYnz/database</strong></p>
+
+
+
+<p>El problema era que el codi, que surt darrera de l’usuari,&nbsp;<strong>Z5TYnz</strong>, canvia cada cop que s’entra a l’usuari o es posa en funcionament l’ordinador. Així que era qüestió de veure com treure aquest valor. Al final és una manipulació d’una cadena de caràcters, i de tot plegat va sortir el següent script, en que he generalitzat amb algunes suposicions:<br>&nbsp;</p>
+
+
+
+<ul class="wp-block-list"><li>A l’ordinador hi ha tant sols un usuari connectat.</li><li>Si hi ha més d’un usuari s’enviarà al primer que surt de la llista amb&nbsp;<strong>users</strong>.</li></ul>
+
+
+
+<p>L’script, d’exemple, posa en funcionament el firefox amb una pàgina web en concret, canviat això podeu obrir qualsevol altra programa.</p>
+
+
+
+<p>Aquest script va junt a una línia de crontab a /etc. Editem /etc/crontab. Suposem que el volem executar a les 10 del matí cada dia i l’hem anomenat grafics i l’hem posat a dins de la carpeta scripts.</p>
+
+
+
+<p>* 10 * * * root /opt/scripts/grafics</p>
+
+
+
+<p>Ni que dir que, el fitxer grafics ha de tenir drets d’execució: chmod a+x grafics</p>
+
+
+
+<p>Més informació sobre el cron:</p>
+
+
+
+<ul class="wp-block-list"><li><a href="http://ca.wikipedia.org/wiki/Cron_%28Unix%29" target="_blank" rel="noopener">Wikipedia</a></li><li><a href="http://ca.codidoc.com/sistemes-operatius/linux/administracio-de-servidors-linux/crontab/configuracio" target="_blank" rel="noopener">Petit manual</a></li></ul>
+
+
+
+<p>Be tot seguit l’script, deixaré amb&nbsp;<strong>remarcat</strong>&nbsp;la part que es pot canviar:</p>
+
+
+
+<p>###################################################################################<br>#!/bin/bash #<br># Script per executar un programa gràfic des del cron #<br># #<br># Llicència: GPL v3.0 #<br># Autor: Josep M Sardà. IES RAMON TURRÓ I DARDER.Departament d’educació. #<br># Col·laboració David Agüera. #<br># Versió: 1.0 #<br># Data: 29-11-2012 #<br>###################################################################################</p>
+
+
+
+<p># Cerquem l’usuari connectat ######################################################<br>export connectat=`sh -c “users”`<br>export connectat=${connectat%%[[:space:]]*}</p>
+
+
+
+<p># Cerquem el codi d’autorització per aquest usuari#################################<br>export usuari=`sudo ls /var/run/gdm/auth-* | grep $connectat`<br>export usuari=${usuari/:/}<br>export usuari=”XAUTHORITY=$usuari/database”</p>
+
+
+
+<p># Executem el programa firefox i obre una web #################################</p>
+
+
+
+<p>sh -c “DISPLAY=:0; $usuari; XAUTHLOCALHOSTNAME=localhost; export DISPLAY; export XAUTHORITY; export XAUTHLOCALHOSTNAME;&nbsp;<strong>firefox&nbsp;<a href="http://www.iesmalgrat.cat/" target="_blank" rel="noopener">www.iesmalgrat.cat</a></strong>“</p>
+
+
+
+<h1 class="wp-block-heading"><a>Problemes amb la codificació de caràcters</a></h1>
+
+
+
+<p>Us ha passat mai que al copiar o traslladar informació us queden els documents amb caràcters estranys?</p>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/caracteres1.png" alt="Carpetes amb noms de fitxer amb accents mal codificats" loading="lazy"></figure>
+
+
+
+<p>Si són pocs ho podem corregir a ma, però si són molts ho podem automatitzar des del terminal.</p>
+
+
+
+<p>Ens cal un programa anomenat “convmv”</p>
+
+
+
+<p>fem la instal·lació en funció de la distribució linux:</p>
+
+
+
+<p>sudo zypper in convvmv</p>
+
+
+
+<p>o bé</p>
+
+
+
+<p>sudo apt-get install convmv</p>
+
+
+
+<p>un cop el tenim instal·lat ens posem a la carpeta on tenim el problema i executem:</p>
+
+
+
+<p><strong>find . -name ‘?’ | xargs convmv -r –notest -f cp850 -t UTF-8</strong></p>
+
+
+
+<p>Un cop hagi acabat haurà corregit tots els noms!</p>
+
+
+
+<figure class="wp-block-image"><img src="imatges/recuperades/caracteres2.png" alt="Les mateixes carpetes amb els accents ja corregits" loading="lazy"></figure>
+
+
+
+<p>Informació extreta de:&nbsp;<a href="http://onoametal.wordpress.com/2012/09/24/corregir-caracteres-extranos-en-ubuntu/" target="_blank" rel="noopener">http://onoametal.wordpress.com/2012/09/24/corregir-caracteres-extranos-e…</a></p>
+
+
+
+<h1 class="wp-block-heading"><a>Sincronització i còpies de seguretat</a></h1>
+
+
+
+<p>Sincronitzar o fer còpies de seguretat. Sempre és convenient tenir una còpia de seguretat de la informació que ens és útil.Una manera pot ser anar mirant que hem modificat, i copiant a un altra disc dur, però aquesta feina pot ser molt pesada, per tant tenim programes que ens ho fan automàticament.Un d’aquests programes és el Grsync, que és un entorn gràfic de rsync, una instrucció de línux per fer còpies de seguretat.És una eina molt senzilla de instal·lar i de utilitzar, aquí teniu un breu tutorial del seu ús més senzill.</p>
+
+
+
+<figure><div class="diapos"><div class="diapos-marc"><img src="presentacions/utilitats/grsync/d-1.jpg" alt="Diapositiva 1 de 9" class="vista" loading="lazy"><img src="presentacions/utilitats/grsync/d-2.jpg" alt="Diapositiva 2 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-3.jpg" alt="Diapositiva 3 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-4.jpg" alt="Diapositiva 4 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-5.jpg" alt="Diapositiva 5 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-6.jpg" alt="Diapositiva 6 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-7.jpg" alt="Diapositiva 7 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-8.jpg" alt="Diapositiva 8 de 9" loading="lazy"><img src="presentacions/utilitats/grsync/d-9.jpg" alt="Diapositiva 9 de 9" loading="lazy"></div><div class="diapos-ctrl"><button type="button" class="ant" aria-label="Diapositiva anterior">‹</button><span class="num">1 / 9</span><button type="button" class="seg" aria-label="Diapositiva següent">›</button><a href="presentacions/utilitats/grsync.pdf" target="_blank">PDF</a></div></div></figure>
+
+
+
+<p>Manual rsync:&nbsp;<a href="http://samba.anu.edu.au/ftp/rsync/rsync.html" target="_blank" rel="noopener">http://samba.anu.edu.au/ftp/rsync/rsync.html</a><br></p></div></article></main></div>
+<footer class="peu-web">
+  <p class="nom">Tecnocat.eu</p>
+  <p>Continguts de Josep M Sardà · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca">CC BY-NC-SA 4.0</a></p>
+</footer>
+<script src="assets/cerca-dades.js"></script>
+<script src="assets/tecnocat.js"></script>
+</body>
+</html>

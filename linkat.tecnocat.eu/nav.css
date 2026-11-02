@@ -1,0 +1,34 @@
+body{padding:0;text-align:center;background:#fafafa url(_em_fondo_pagina_taronja.gif)}
+#lbOverlay{background:#f3f3f3 url(_em_fondo_pagina_taronja.gif)}
+#content{width:97%;min-width:985px;margin:0 auto;text-align:left;position:relative;border-style:solid;border-width:1px;padding-bottom:10px;max-width:100%;background:#fff url(_em_columna_izquierda_taronja.png) repeat-y 0 0;border-color:#e3e7ea;box-shadow:0 0 10px 0 #666}
+#main{padding:10px 20px 11px 250px}
+#header,#emptyHeader{border-top:none}
+div#nodeDecoration{padding:0;margin:0;background:none;border:none}
+#nodeTitle{padding:.1em 0 .6em 0;border-bottom:1px solid #eef1f2}
+/* Navigation */
+#siteNav{width:230px;float:left;padding-right:20px}
+#siteNav,#siteNav ul{background:#fff;border-color:#f0f0f0}
+#siteNav li:hover,#siteNav li.sfhover{background:#f5fafc}
+#siteNav ul,#siteNav li{margin:0;padding:0;list-style:none}
+#siteNav a{display:block;padding:4px 0 4px 10px;border-width:0 1px 1px 0;border-style:solid;color:#4D4D4D;border-color:#e3e7ea #f5f7f7}
+#siteNav a:hover,#siteNav a:focus{color:#000;background:#f5fafc}
+* html #siteNav a{display:inline-block;width:100%} /* IE6 */
+#siteNav .main-node{font-weight:bold;font-variant:small-caps;letter-spacing:1px;font-size:1.1em}
+#siteNav a.main-node:hover{text-decoration:underline;background:none}
+#siteNav ul ul a{padding-left:25px;font-size:.95em;color:#555}
+#siteNav .active{color:#A04B13;font-weight:bold}
+#siteNav .other-section{display:none}
+#siteNav ul ul ul a{padding-left:50px}
+/* Pagination */
+.pagination{border-top:1px solid #eef1f2;padding-top:20px;text-align:right;color:#fff}
+.pagination a{padding:3px 5px;border-radius:5px;background:#f5fafc;color:#A04B13;box-shadow:0 0 3px 0 #ccc;margin:0 5px}
+.pagination a:hover,.pagination a:focus,#topPagination .pagination a:hover,#topPagination .pagination a:focus{text-decoration:none;background:#A04B13;color:#fff}
+#topPagination{position:absolute;top:7px;width:100%;right:20px}
+#topPagination a{background:#fff;box-shadow:0 0 3px 0 #ddd}
+#topPagination .prev{margin-left:20px}
+#topPagination .pagination{border:none;color:#f8fdff} /* Hidden */
+/* Autoclear */
+#content:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0} 
+#content{display:inline-block}
+html[xmlns] #content{display:block}
+* html #content{height: 1%;overflow:visible}

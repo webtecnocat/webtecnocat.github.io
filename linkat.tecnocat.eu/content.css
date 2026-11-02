@@ -1,0 +1,34 @@
+html{padding:0}
+body{font:.75em/1.5 Arial,Verdana,Helvetica,sans-serif;padding:15px;margin:0;text-align:left;color:#333333;background:#ffffff}
+a{color:#44A7E9}
+#header,#emptyHeader{text-align:left;height:5em;padding-left:10px;font-size:1.2em;line-height:5em;color:#555;background:#f8eec5 url(_em_logo_taronja.png) no-repeat 0 0;text-shadow:1px 1px 1px #fff;border-bottom:1px solid #e3e7ea;border-top:1px solid #e3e7ea;color:#1367A0} /* Header is also in single page */
+#header h1{margin:0;font-size:1em}
+div#nodeDecoration{text-align:left;padding:1em 20px;margin-bottom:2em;background:#f8eec5 url(_em_logo_taronja.png) no-repeat 0 0;text-shadow:1px 1px 1px #fff;border-bottom:1px solid #e3e3e3;border-top:1px solid #e3e3e3}
+#nodeTitle,.nodeTitle{font-size:1.5em;margin:0;font-weight:bold;color:#105989} /* .nodeTitle when single page */
+.nodeTitle{padding:.1em 0 .6em 0;border-bottom:1px solid #eef1f2;margin-top:1em}
+#main h2{font-size:1.4em;color:#666}
+#main h2.iDeviceTitle{display:inline;font-size:1.2em}
+h3{font-size:1.25em;color:#777}
+#main h4{font-size:1.2em}
+#main h5{font-size:1.1em}
+.iDevice{margin:2em 0}
+.iDevice_icon{width:23px;height:auto;margin-right:5px} /* Icons: "Iconic" (Creative Commons by-sa), by P. J. Onori (http://www.somerandomdude.com/work/iconic/) */
+.iDeviceTitle{font-size:1.2em;vertical-align:top;top:-2px;color:#666;line-height:2em} 
+.iDevice_inner{padding: 10px 20px;border:1px solid #f0f0f0;background:#fbfeff;color:#444;border-radius:5px}
+#siteFooter{color:#666;font-size:.95em}
+#siteFooter a{color:#A04B13}
+input,select,textarea{font-family:Arial,Verdana,Helvetica,sans-serif;font-size:1em}
+#lbOverlay{background-color:#f3f3f3}
+#lbOuterContainer{border-color:#ddd}
+.ExternalUrlIdevice iframe{border:none}
+/* Lightbox */
+.exeImageGallery{width:100%}
+#lbTopContainer, #lbBottomContainer{font-size:1em}
+/* base.css */
+.block,.feedback{padding:0}
+.feedback{font-family:Arial,Verdana,Helvetica,sans-serif;font-size:1em}
+li{list-style-position:outside}
+#wikipedia-content ul li{list-style-image:none;margin-bottom:auto}
+/* Form buttons */
+.iDevice_inner input[type=submit],.feedbackbutton{background:#777;border:0;padding:3px 5px;color:#fff;border-radius:5px;text-shadow:1px 1px 1px #000;box-shadow:1px 1px 3px 0 #ccc;margin-bottom:1em}
+.iDevice_inner input[type=submit]:hover,.feedbackbutton:hover{background:#105989;color:#f3f3f3;box-shadow:none}

@@ -1,85 +1,45 @@
 # Instruccions per acabar de passar la web a tecnocat.eu
 
-Estat a 2 de novembre de 2026: la web funciona a https://tecnocat.eu/, amb https, i també /ia/, /linkat/ i /Web/. Els passos 2, 3 i 4 ja estan fets, i el repositori `ia` ja es diu `ia-antic`. Queden els passos 1, 5 i 6 i algunes coses de l'apartat 7.
+Estat a 2 de novembre de 2026: la web nova està acabada i funciona a https://tecnocat.eu/, amb https. També funcionen /linkat/, /ia/ (la versió integrada) i /Web/. www.tecnocat.eu i webtecnocat.github.io porten a tecnocat.eu, i linkat.tecnocat.eu porta a https://tecnocat.eu/linkat/.
 
-Els subdominis antics (linkat, appinv1, appinv2, tecnocat2019) encara apunten al servidor d'IONOS (217.160.0.2) i mostren les webs antigues. El domini té el correu configurat a IONOS (registres MX a mx00.ionos.es i mx01.ionos.es).
+## Per comprovar el proper cop (Claude)
 
-## 1. Mirar el correu @tecnocat.eu
-
-Entra al panell d'IONOS (https://my.ionos.es) i mira si hi ha alguna bústia de correu @tecnocat.eu i si algú la fa servir.
-
-- Canviar la web de lloc (pas 2) no afecta el correu. Els registres MX no s'han de tocar.
-- El risc és al pas 6: si canvies el contracte a "només domini", les bústies poden desaparèixer. Si hi ha correu que cal guardar, s'ha de copiar o moure abans.
-
-## 2. Canviar les DNS a IONOS
-
-Al panell d'IONOS, ves a Dominis i SSL › tecnocat.eu › DNS.
-
-1. Esborra el registre A de `tecnocat.eu` (el que apunta a 217.160.0.2, també pot sortir com a `@`).
-2. Afegeix quatre registres A per a `tecnocat.eu` (`@`), un per a cada adreça:
-   - 185.199.108.153
-   - 185.199.109.153
-   - 185.199.110.153
-   - 185.199.111.153
-3. Canvia el registre de `www`: esborra l'A que apunta a 217.160.0.2 i crea un CNAME de `www` cap a `webtecnocat.github.io`.
-4. No toquis els registres MX, TXT ni el d'`autodiscover`, que són del correu.
-
-Si IONOS no et deixa canviar el registre A perquè diu que el domini està connectat a l'allotjament, primer has de desconnectar-lo de l'allotjament (a la mateixa pantalla del domini, "Ús del domini" o "Destinació") i després ja el pots editar.
-
-El canvi pot trigar des d'uns minuts fins a unes hores. Per comprovar-ho, al terminal:
+A IONOS s'han esborrat els registres DNS d'`appinv1`, `appinv2` i `www.linkat` (A i AAAA). El 2 de novembre, una estona després, els servidors d'IONOS encara donaven 217.160.0.2 per als tres. Cal comprovar:
 
 ```
-dig +short tecnocat.eu
-dig +short www.tecnocat.eu
+dig +short @ns1102.ui-dns.de appinv1.tecnocat.eu
+dig +short @ns1102.ui-dns.de appinv2.tecnocat.eu
+dig +short @ns1102.ui-dns.de www.linkat.tecnocat.eu
 ```
 
-El primer ha de donar les quatre adreces 185.199.x.153 i el segon ha de començar per `webtecnocat.github.io.`. Mentre surti 217.160.0.2, encara no ha canviat.
+- Si no surt res, ja estan esborrats i això està acabat.
+- Si encara surt 217.160.0.2, és que no es va arribar a desar. Cal tornar a la taula de DNS de tecnocat.eu a IONOS, prémer "Restablecer filtro" per veure tots els registres, esborrar els A d'`appinv1`, `appinv2` i `www.linkat`, i assegurar-se que es desa.
+- Els registres de `linkat` (sense www) no s'han de tocar, perquè fan la redirecció.
 
-## 3. Regenerar la web amb el domini i pujar-la
+També cal comprovar que http://linkat.tecnocat.eu/ continua portant a https://tecnocat.eu/linkat/.
 
-Només quan el pas 2 ja funcioni. Si no, GitHub enviaria les visites de webtecnocat.github.io a un domini que encara mostra el WordPress antic.
+## Què queda pendent
 
-Ho pot fer Claude, o tu mateix al terminal:
+1. Mirar si algú fa servir el correu @tecnocat.eu. Al panell d'IONOS (https://my.ionos.es), mirar si hi ha bústies creades. El domini té el correu a IONOS (registres MX a mx00.ionos.es i mx01.ionos.es, i també n'hi ha a `linkat` i `apps`). No s'ha de tocar cap registre MX, TXT, `_dmarc`, `_domainkey` ni `autodiscover`.
+2. tecnocat2019.tecnocat.eu encara mostra el WordPress antic. De moment es deixa així, per poder-hi entrar si cal. Quan ja no calgui, a "Subdominios" se li ha de posar una redirecció (HTTP o 301, no "con frame") cap a https://tecnocat.eu/, conservant la ruta si IONOS ho permet. Era l'adreça del WordPress antic i hi ha enllaços com tecnocat2019.tecnocat.eu/tecnologia/robotica que la web nova ja sap redirigir.
+3. Canviar el contracte d'IONOS a "només domini" o cancel·lar l'allotjament. Només quan estiguin fets els punts 1 i 2. Abans, si vols, baixa una còpia del WordPress des del panell. Mantenir només el domini costa entre 5 i 15 € l'any. Quan es cancel·li l'allotjament, també es poden esborrar els registres `ftp`, `apps` i `www.apps`, que apunten a 217.160.0.2.
+4. Treure la versió antiga d'IA que encara surt a https://tecnocat.eu/ia-antic/. Al repositori `webtecnocat/ia-antic`, Settings › Actions › General, desactivar les Actions, o a Settings › Pages fer "Unpublish site". El repositori no s'ha d'esborrar, i no se li ha de tornar a posar el nom `ia`, perquè llavors tornaria a tapar /ia/.
+5. Decidir què es fa amb el repositori `Web` (https://tecnocat.eu/Web/), una altra web d'eXeLearning sobre Linkat, Epoptes, impressores, pissarres digitals i serveis del Departament. No és dins la web nova. Es pot deixar com està, posar-hi un enllaç des del menú o integrar-la com `ia` i `linkat`. No se'n pot desactivar la publicació si no s'ha integrat abans.
+6. Esborrar la carpeta `web/` de l'ordinador. És la versió antiga de `docs/` i no es puja a GitHub: `rm -rf ~/Gemini/tecnocat/web`
+7. Posar una contrasenya nova a la compte webtecnocat de GitHub ("Forgot password", que l'envia a tecnocat.eu@gmail.com). Ara només s'hi pot entrar amb Google.
 
-```
-cd ~/Gemini/tecnocat
-sed -i 's|^URL_WEB = .*|URL_WEB = "https://tecnocat.eu/"|' eines/construeix.py
-python3 eines/construeix.py
-git add -A
-git commit -m "Passa la web al domini tecnocat.eu"
-git push
-```
+bloc.tecnocat.eu és una redirecció amb frame cap a http://tecnocat.blogspot.com. No depèn de l'allotjament i es pot deixar.
 
-L'script crearà el fitxer `docs/CNAME` amb `tecnocat.eu`. El commit i el push es fan amb la compte webtecnocat, sense tocar la de cap d'estudis.
+## Com es canvia la web
 
-## 4. Activar el domini a GitHub
+Dins de `~/Gemini/tecnocat`: editar els originals o `eines/construeix.py`, executar `python3 eines/construeix.py` i després `git add -A`, `git commit -m "..."` i `git push`. Es puja amb la compte webtecnocat per SSH (àlies `github-webtecnocat`), sense tocar la de cap d'estudis. Més detalls al README.
 
-Entra a GitHub amb Google (tecnocat.eu@gmail.com) i obre el repositori `webtecnocat/webtecnocat.github.io`.
+## Configuració actual (per si cal refer-la)
 
-1. Ves a Settings › Pages. A "Custom domain" hi hauria de sortir `tecnocat.eu`. Si no hi és, escriu-lo i prem Save.
-2. Espera que la comprovació de DNS surti en verd. Pot trigar una estona.
-3. Marca "Enforce HTTPS". Si l'opció surt desactivada, és que GitHub encara està fent el certificat: torna-hi al cap d'una hora.
+DNS de tecnocat.eu a IONOS:
 
-Comprova que https://tecnocat.eu/, https://www.tecnocat.eu/, https://tecnocat.eu/linkat/ i https://tecnocat.eu/ia/ funcionen, i que https://webtecnocat.github.io/ porta a tecnocat.eu.
+- `@`: quatre registres A, 185.199.108.153, 185.199.109.153, 185.199.110.153 i 185.199.111.153.
+- `www`: CNAME cap a `webtecnocat.github.io`.
+- `linkat`: redirecció d'IONOS cap a https://tecnocat.eu/linkat/ (a "Subdominios").
 
-## 5. Redirigir els subdominis antics
-
-GitHub Pages no pot servir els subdominis antics, però a IONOS es poden convertir en una redirecció web. A cada subdomini, tria "Redirecció" (o "Reenviament") cap a aquestes adreces:
-
-- linkat.tecnocat.eu → https://tecnocat.eu/linkat/
-- appinv1.tecnocat.eu → https://tecnocat.eu/presentacions/appinv1/
-- appinv2.tecnocat.eu → https://tecnocat.eu/presentacions/appinv2/
-- tecnocat2019.tecnocat.eu → https://tecnocat.eu/
-
-Les adreces antigues dels articles (com `/2019/09/21/clonezilla/`) ja tenen una pàgina dins la web que porta a la nova.
-
-## 6. Canviar el contracte d'IONOS
-
-Quan tot funcioni i hagis resolt el correu (pas 1), canvia el contracte a "només domini" o cancel·la l'allotjament. Mantenir només el domini costa entre 5 i 15 € l'any. Abans de cancel·lar, si vols, baixa una còpia del WordPress des del panell, encara que el contingut ja és tot a la web nova.
-
-## 7. Altres coses pendents
-
-- Fet: arreglar `/ia/`, que donava error 404. El repositori `ia` publicava amb una GitHub Action i, encara que s'ha fet "Unpublish site", GitHub continua reservant-li l'adreça `/ia/`. Cal canviar-li el nom: al repositori `webtecnocat/ia`, Settings › General › Repository name, posar `ia-antic` i prémer Rename. Després, https://webtecnocat.github.io/ia/ (o https://tecnocat.eu/ia/ després del canvi de domini) ha de mostrar la versió integrada, amb la capçalera i el menú de Tecnocat. Si la versió antiga sortís a `/ia-antic/`, a Settings › Actions › General del mateix repositori es poden desactivar les Actions. El repositori no s'ha d'esborrar.
-- Decidir què es fa amb el repositori `Web` (https://webtecnocat.github.io/Web/), que és una altra web d'eXeLearning sobre Linkat, Epoptes, impressores, pissarres digitals i serveis del Departament. No és dins la web nova. Es pot deixar com està, posar-hi un enllaç des del menú o integrar-la com `ia` i `linkat`. No en desactivis la publicació si no l'has integrada abans.
-- Esborrar la carpeta `web/` de l'ordinador. És la versió antiga de `docs/`, ja no es fa servir i no es puja a GitHub: `rm -rf ~/Gemini/tecnocat/web`
-- Posar una contrasenya nova a la compte webtecnocat de GitHub ("Forgot password", que l'envia a tecnocat.eu@gmail.com). Ara només s'hi pot entrar amb Google.
+GitHub, repositori `webtecnocat/webtecnocat.github.io`, Settings › Pages: "Deploy from a branch", branca `main`, carpeta `/docs`, domini `tecnocat.eu` i "Enforce HTTPS" activat. El fitxer `docs/CNAME` el crea l'script perquè `URL_WEB` és `https://tecnocat.eu/`.

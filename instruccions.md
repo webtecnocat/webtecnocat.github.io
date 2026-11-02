@@ -1,8 +1,8 @@
 # Instruccions per acabar de passar la web a tecnocat.eu
 
-Estat a 2 de novembre de 2026: la web està publicada a https://webtecnocat.github.io/ i funciona. Falta passar-la al domini tecnocat.eu i fer neteja.
+Estat a 2 de novembre de 2026: la web funciona a https://tecnocat.eu/, amb https, i també /ia/, /linkat/ i /Web/. Els passos 2, 3 i 4 ja estan fets, i el repositori `ia` ja es diu `ia-antic`. Queden els passos 1, 5 i 6 i algunes coses de l'apartat 7.
 
-Ara mateix tecnocat.eu i tots els subdominis (www, linkat, appinv1, appinv2, tecnocat2019) apunten al servidor d'IONOS (217.160.0.2), on hi ha el WordPress antic. El domini també té el correu configurat a IONOS (registres MX a mx00.ionos.es i mx01.ionos.es).
+Els subdominis antics (linkat, appinv1, appinv2, tecnocat2019) encara apunten al servidor d'IONOS (217.160.0.2) i mostren les webs antigues. El domini té el correu configurat a IONOS (registres MX a mx00.ionos.es i mx01.ionos.es).
 
 ## 1. Mirar el correu @tecnocat.eu
 
@@ -79,7 +79,7 @@ Quan tot funcioni i hagis resolt el correu (pas 1), canvia el contracte a "nomé
 
 ## 7. Altres coses pendents
 
-- Arreglar `/ia/`, que ara dona error 404. El repositori `ia` publicava amb una GitHub Action i, encara que s'ha fet "Unpublish site", GitHub continua reservant-li l'adreça `/ia/`. Cal canviar-li el nom: al repositori `webtecnocat/ia`, Settings › General › Repository name, posar `ia-antic` i prémer Rename. Després, https://webtecnocat.github.io/ia/ (o https://tecnocat.eu/ia/ després del canvi de domini) ha de mostrar la versió integrada, amb la capçalera i el menú de Tecnocat. Si la versió antiga sortís a `/ia-antic/`, a Settings › Actions › General del mateix repositori es poden desactivar les Actions. El repositori no s'ha d'esborrar.
+- Fet: arreglar `/ia/`, que donava error 404. El repositori `ia` publicava amb una GitHub Action i, encara que s'ha fet "Unpublish site", GitHub continua reservant-li l'adreça `/ia/`. Cal canviar-li el nom: al repositori `webtecnocat/ia`, Settings › General › Repository name, posar `ia-antic` i prémer Rename. Després, https://webtecnocat.github.io/ia/ (o https://tecnocat.eu/ia/ després del canvi de domini) ha de mostrar la versió integrada, amb la capçalera i el menú de Tecnocat. Si la versió antiga sortís a `/ia-antic/`, a Settings › Actions › General del mateix repositori es poden desactivar les Actions. El repositori no s'ha d'esborrar.
 - Decidir què es fa amb el repositori `Web` (https://webtecnocat.github.io/Web/), que és una altra web d'eXeLearning sobre Linkat, Epoptes, impressores, pissarres digitals i serveis del Departament. No és dins la web nova. Es pot deixar com està, posar-hi un enllaç des del menú o integrar-la com `ia` i `linkat`. No en desactivis la publicació si no l'has integrada abans.
 - Esborrar la carpeta `web/` de l'ordinador. És la versió antiga de `docs/`, ja no es fa servir i no es puja a GitHub: `rm -rf ~/Gemini/tecnocat/web`
 - Posar una contrasenya nova a la compte webtecnocat de GitHub ("Forgot password", que l'envia a tecnocat.eu@gmail.com). Ara només s'hi pot entrar amb Google.
